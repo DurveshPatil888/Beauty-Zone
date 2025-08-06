@@ -1,8 +1,11 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
-
+div {
+  display: block;
+}
 body {
   background-color: #ecd1d1;
   font-family: 'Poppins', sans-serif;
@@ -10,7 +13,7 @@ body {
 }
 
 header {
-  height: 5rem;
+  height: 7rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -31,42 +34,11 @@ nav ul li a {
   font-weight: 500;
 }
 
-.heroheading button {
-  margin-left: 6rem;
-  margin-top: 1.5rem;
-  background-color: #292525;
-  color: white;
-  border-radius: 5rem;
-  padding: 0.8rem 0.7rem;
-  cursor: pointer;
-  position: relative;
-}
 .logo img {
   max-height: 10rem;
   height: auto;
   width: auto;
   display: block;
-}
-
-/* .hero-section {
-  position: relative;
-  height: 65vh;
-  width: 100%;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
-.hero-section img {
-  /* box-sizing: border-box; */
-  margin-top: 7rem;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  position: relative;
-  top: 1;
-  left: 0;
-  z-index: -1;
 }
 
 .heroheading {
@@ -81,8 +53,8 @@ nav ul li a {
 }
 
 .heroheading #subhead {
-  margin-top: 3rem;
-  margin-left: 6rem;
+  margin-top: 15rem;
+  margin-left: 8rem;
   font-size: 1rem;
   margin-bottom: 0.5rem;
   color: #292525;
@@ -92,10 +64,119 @@ nav ul li a {
 .heroheading #mainhead {
   color: #292525;
   margin-top: 1rem;
-  margin-left: 6rem;
+  margin-left: 8rem;
   position: relative;
   font-size: 4.1rem;
   font-weight: 550;
   max-width: 60%;
   line-height: 1.2;
+}
+.heroheading button {
+  margin-left: 8rem;
+  margin-top: 4rem;
+  background-color: #292525;
+  color: white;
+  border-radius: 5rem;
+  padding: 0.8rem 0.7rem;
+  cursor: pointer;
+  position: relative;
+}
+.container {
+  height: 90vh;
+}
+
+.second-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  background-color: aliceblue;
+  height: 55vh;
+  width: 100%;
+  border-top-left-radius: 70px;
+  border-top-right-radius: 70px;
+}
+/* .second-container .sc-left1 .left-1 {
+  display: flex;
+  width: 100%;
+  position: relative;
+} */
+
+.second-container .sc-right {
+  margin-left: 8rem;
+  gap: 6rem;
+  align-items: center;
+  display: flex;
+  width: 55%;
+  flex-direction: column;
+}
+.second-container .sc-right h1 {
+  text-align: end;
+  margin-right: 7rem;
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+.second-container .sc-right p {
+  text-align: end;
+  margin-right: 7rem;
+  font-size: 1rem;
+  font-weight: 200;
+}
+.second-container .sc-left {
+  width: 40%;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  gap: 1rem;
+}
+
+.second-container .sc-left .book-service {
+  margin-top: 1rem;
+  background-color: #292525;
+  color: white;
+  border-radius: 5rem;
+  padding: 0.3rem 0.9rem;
+  cursor: pointer;
+  position: relative;
+}
+.tc-headingb {
+  display: flex;
+  gap: 3rem;
+  background-color: #8d5f5f;
+  align-items: center;
+}
+.third-container {
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem; */
+  padding: 2rem 5rem;
+  background-color: #8d5f5f;
+  height: auto;
+  width: 100%;
+}
+.third-container .bridal {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  width: 100%;
+  text-align: end;
+  margin-right: 7rem;
+  font-size: 1rem;
+  font-weight: 200;
+}
+.third-container .bridal .bridali {
+  width: 45%;
+  height: auto;
+  max-width: 25rem;
+  display: block;
+  border-radius: 10px;
+}
+
+.third-container .bridal .bridaltext {
+  flex-grow: 1;
+  flex-direction: column;
+  height: auto;
+  /* max-width: 25rem; */
+  display: block;
 }
