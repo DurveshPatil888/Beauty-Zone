@@ -140,35 +140,49 @@ nav ul li a {
   position: relative;
 }
 .tc-headingb {
+  padding: 1rem 6rem;
+  border-bottom: 2px solid #a37b7b;
   display: flex;
+  justify-content: start;
   gap: 3rem;
-  background-color: #8d5f5f;
+  background-color: #ede8d3;
   align-items: center;
 }
+.tc-headingb div {
+  font-size: 1.1rem;
+  margin-left: 2.5rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+.tc-headingb div:hover {
+  color: #e96e9f;
+}
+
 .third-container {
-  /* display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 4rem; */
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   padding: 2rem 5rem;
-  background-color: #8d5f5f;
+  background-color: #ede8d3;
   height: auto;
   width: 100%;
 }
+
 .third-container .bridal {
   display: flex;
   align-items: center;
-  gap: 3rem;
+  gap: 5rem;
   width: 100%;
   text-align: end;
-  margin-right: 7rem;
-  font-size: 1rem;
+  margin-right: 10rem;
+  font-size: 1.1rem;
   font-weight: 200;
 }
+
 .third-container .bridal .bridali {
-  width: 45%;
+  margin-top: 2rem;
+  width: 27%;
   height: auto;
-  max-width: 25rem;
+  max-width: 18rem;
   display: block;
   border-radius: 10px;
 }
@@ -177,6 +191,192 @@ nav ul li a {
   flex-grow: 1;
   flex-direction: column;
   height: auto;
-  /* max-width: 25rem; */
   display: block;
+}
+
+.third-container .bridal .bridaltext h3 {
+  font-size: 25px;
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+
+.third-container .facial {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  width: 100%;
+  text-align: end;
+  margin-right: 10rem;
+  font-size: 1.1rem;
+  font-weight: 200;
+}
+
+.third-container .facial .faciali {
+  margin-top: 2rem;
+  width: 41%;
+  height: auto;
+  max-width: 33rem;
+  display: block;
+  border-radius: 10px;
+}
+
+.third-container .facial .facialtext {
+  flex-grow: 1;
+  flex-direction: column;
+  height: auto;
+  display: block;
+}
+
+.third-container .facial .facialtext h3 {
+  font-size: 25px;
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+
+.third-container .haircut {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  width: 100%;
+  text-align: end;
+  margin-right: 10rem;
+  font-size: 1.1rem;
+  font-weight: 200;
+}
+
+.third-container .haircut .haircuti {
+  margin-top: 2rem;
+  width: 44%;
+  height: auto;
+  max-width: 33rem;
+  display: block;
+  border-radius: 10px;
+}
+
+.third-container .haircut .haircuttext {
+  flex-grow: 1;
+  flex-direction: column;
+  height: auto;
+  display: block;
+}
+
+.third-container .haircut .haircuttext h3 {
+  font-size: 25px;
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+
+.third-container .manicure {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  width: 100%;
+  text-align: end;
+  margin-right: 10rem;
+  font-size: 1.1rem;
+  font-weight: 200;
+}
+.third-container .manicure .manicurei {
+  margin-top: 2rem;
+  width: 44%;
+  height: auto;
+  max-width: 33rem;
+  display: block;
+  border-radius: 10px;
+}
+.third-container .manicure .manicuretext {
+  flex-grow: 1;
+  flex-direction: column;
+  height: auto;
+  display: block;
+}
+.third-container .manicure .manicuretext h3 {
+  font-size: 25px;
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+
+.third-container .mehendi {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  width: 100%;
+  text-align: end;
+  margin-right: 10rem;
+  font-size: 1.1rem;
+  font-weight: 200;
+}
+
+.third-container .mehendi .mehendii {
+  margin-top: 2rem;
+  width: 44%;
+  height: auto;
+  max-width: 33rem;
+  display: block;
+  border-radius: 10px;
+}
+.third-container .mehendi .mehenditext {
+  flex-grow: 1;
+  flex-direction: column;
+  height: auto;
+  display: block;
+}
+.third-container .mehendi .mehenditext h3 {
+  font-size: 25px;
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+
+.third-container .threading {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  width: 100%;
+  text-align: end;
+  margin-right: 10rem;
+  font-size: 1.1rem;
+  font-weight: 200;
+}
+.third-container .threading .threadingi {
+  margin-top: 2rem;
+  width: 44%;
+  height: auto;
+  max-width: 33rem;
+  display: block;
+  border-radius: 10px;
+}
+
+.third-container .threading .threadingtext {
+  flex-grow: 1;
+  flex-direction: column;
+  height: auto;
+  display: block;
+}
+.third-container .threading .threadingtext h3 {
+  font-size: 25px;
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+/* sagde services hide kru adhi */
+.third-container .bridal,
+.third-container .facial,
+.third-container .haircut,
+.third-container .manicure,
+.third-container .mehendi,
+.third-container .threading {
+  display: none;
+}
+
+/* 1st service la dakhva fakt becuase te disayla hav web open krtach */
+.third-container .bridal {
+  display: flex; /* Bridal service adhichich visible asel */
+}
+.contact-form {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  gap: 4rem;
+  background-color: rgb(70, 145, 210);
+  height: 55vh;
+  width: 100%;
 }
