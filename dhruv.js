@@ -1,13 +1,21 @@
-const items = document.querySelectorAll('.sctext');
-let current = 0;
+const tcheadingb = document.querySelectorAll('.tc-headingb div');
+const herob = document.querySelectorAll('heroheading button');
+const thirdcontainer = document.querySelectorAll('.third-container > div');
+document.querySelector('.third-container .bridal').style.display = 'flex';
 
-function rotateText() {
-  items[current].classList.remove('active');
-  const parent = items[current].parentNode;
-  parent.appendChild(items[current]);
-  current = 0;
-  items[current].classList.add('active');
-}
+tcheadingb.forEach((heading) => {
+  heading.addEventListener('click', () => {
+    thirdcontainer.forEach((section) => {
+      section.style.display = 'none';
+    });
+    const servicename = heading.classList[0];
+    const targetclass = servicename.slice(0, -1);
+    const targetservice = document.querySelector(
+      `.third-container .${targetclass}`
+    );
 
-items[0].classList.add('active');
-setInterval(rotateText, 2000);
+    if (targetservice) {
+      targetservice.style.display = 'flex';
+    }
+  });
+});
