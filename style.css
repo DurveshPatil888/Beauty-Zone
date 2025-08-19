@@ -130,12 +130,29 @@ nav ul li a {
   font-size: 1rem;
   font-weight: 200;
 }
+
+.hidden {
+  opacity: 0;
+  transform: translateX(100px); /* right se start hoga */
+  transition: all 1s ease-out;
+}
+
+.show {
+  opacity: 1;
+  transform: translateX(0); /* apni jagah pe aa jayega */
+}
+
 .second-container .sc-left {
   width: 40%;
   align-items: center;
   flex-direction: column;
   display: flex;
   gap: 1rem;
+}
+
+.sctext div {
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
 }
 
 .second-container .sc-left .book-service {
@@ -208,6 +225,22 @@ nav ul li a {
   font-size: 25px;
   margin-bottom: 1rem;
   font-weight: 400;
+}
+.hidden-left {
+  opacity: 0;
+  transform: translateX(-100px); /* left ne yeyil */
+  transition: all 1s ease-out;
+}
+
+.hidden-right {
+  opacity: 0;
+  transform: translateX(100px); /* right ne yeyil */
+  transition: all 1s ease-out;
+}
+
+.show {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 .third-container .facial {
@@ -388,7 +421,8 @@ nav ul li a {
   background-color: #e4c579;
   font-family: 'Lato', sans-serif;
   width: 100%;
-  height: 57rem;
+  min-height: 57rem;
+  height: auto;
 }
 
 .contact-form .contact {
@@ -396,8 +430,13 @@ nav ul li a {
   padding: 1rem;
   border-radius: 1rem;
   width: 39%;
-  height: 52rem;
+  min-height: 52rem;
   border: 2px solid #a37b7b;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 10px;
+  overflow: hidden;
 }
 .contact-form .contact div {
   padding: 1rem;
@@ -444,6 +483,12 @@ nav ul li a {
   padding: 1rem;
 }
 
+.contact-form .contact .allcon .conbut {
+}
+.contact-form .contact .allcon .conbut:hover {
+  box-shadow: 0px 5px 15px #fbf5f5;
+  border: 2px solid #fbf5f5;
+}
 .contactinfo {
   padding: 30px;
   border-radius: 12px;
